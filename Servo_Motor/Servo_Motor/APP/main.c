@@ -11,39 +11,41 @@
 #include "DIO_Interface.h"
 #include "UART_Interface.h"
 #include "DC_MOTOR_Interface.h"
+#include "ADC_Interface.h"
 
 int main() {
 	PWM_init();
 	UART_init(9600);
 	Motor_init();
+	ADC_Init();
 
 	while (1) {
-		// Right
-		MoveRight();
-		ShowingTheValue('R');
-		_delay_ms(2000);
+		u16 x = ADC_Read(0); // Read X-axis
+		u16 y = ADC_Read(1); // Read Y-axis
+			char buffer[20];
+			sprintf(buffer, "X=%d Y=%d\n", x, y);
+			
+			if (y > 600) {
+				MoveBackward();
+				ShowingTheValue('B');
+			}
+			else if (y < 400) {
+				MoveForward();
+				ShowingTheValue('F');
+			}
+			else if (x < 400) {
+				MoveLeft();
+				ShowingTheValue('L');
+			}
+			else if (x > 600) {
+				MoveRight();
+				ShowingTheValue('R');
+			}
+			else {
+				Stop();
+				ShowingTheValue('S');
+			}
 
-		// Left
-
-		MoveLeft();
-		ShowingTheValue('L');
-		_delay_ms(2000);
-
-		// Forward
-
-		MoveForward();
-		ShowingTheValue('F');
-		_delay_ms(2000);
-
-		// Backward
-
-		MoveBackward();
-		ShowingTheValue('B');
-		_delay_ms(2000);
-
-		// Stop
-		Stop();
-		ShowingTheValue('S');
-		_delay_ms(2000);
+			_delay_ms(300);
 	}
 }

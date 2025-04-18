@@ -13,14 +13,14 @@
 
 
 void ADC_Init() {
-	ADMUX = (1<<ADMUX_REFS0);
-	ADCSRA = (1<<ADCSRA_ADEN)|(1<<ADCSRA_ADPS2)|(1<<ADCSRA_ADPS1);
+	ADMUX = (1<<ADMUX_REFS0);  // AVcc as reference
+	ADCSRA = (1<<ADCSRA_ADEN)|(1<<ADCSRA_ADPS2)|(1<<ADCSRA_ADPS1);  //Enable ADC, prescaler 64
 }
 
 u16 ADC_Read(u8 channel) {
-	ADMUX = (ADMUX & 0xF0) | (channel & 0x0F);
-	ADCSRA |= (1<< ADCSRA_ADSC);
-	while(ADCSRA & (1<< ADCSRA_ADSC));
+	ADMUX = (1 << ADMUX_REFS0) | (channel & 0x0F);  // Select ADC channel
+	ADCSRA |= (1<< ADCSRA_ADSC);   // Start conversion
+	while(ADCSRA & (1<< ADCSRA_ADSC));  // Wait for conversion to finish
 	return ADC_OUTPUT;
 }
 

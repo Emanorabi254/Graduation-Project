@@ -24,10 +24,10 @@ void PWM_init() {
 // Direction control via L298N (Connected to PORTC)
 
 void Motor_init() {
-	DIO_SetPinDirection(PORT_C,PIN0,PIN_OUTPUT); //Output pins IN1 (PD0)
-	DIO_SetPinDirection(PORT_C,PIN1,PIN_OUTPUT); //Output pins IN2 (PD1)
-	DIO_SetPinDirection(PORT_C,PIN2,PIN_OUTPUT); //Output pins IN3 (PD2)
-	DIO_SetPinDirection(PORT_C,PIN3,PIN_OUTPUT); //Output pins IN4 (PD3)
+	DIO_SetPinDirection(PORT_C,PIN0,PIN_OUTPUT); //Output pins IN1 (PC0)
+	DIO_SetPinDirection(PORT_C,PIN1,PIN_OUTPUT); //Output pins IN2 (PC1)
+	DIO_SetPinDirection(PORT_C,PIN2,PIN_OUTPUT); //Output pins IN3 (PC2)
+	DIO_SetPinDirection(PORT_C,PIN3,PIN_OUTPUT); //Output pins IN4 (PC3)
 }
 
 void MoveForward() {
