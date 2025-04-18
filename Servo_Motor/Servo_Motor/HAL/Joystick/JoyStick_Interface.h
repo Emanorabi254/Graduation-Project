@@ -10,7 +10,7 @@
 #define JOYSTICK_INTERFACE_H_
 
 
-void JoyStick_init();
+void JoyStick_Mode();
 
 
 #endif /* JOYSTICK_INTERFACE_H_ */

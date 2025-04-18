@@ -33,7 +33,7 @@ void UART_sendString(const u8* data) {
 // Show OCR values and movement direction
 void ShowingTheValue(u8 movement) {
 	u8 buffer[60];
-	sprintf(buffer, "[%c] OCR1A: %u , OCR1B: %u\n\n", movement, OCR1A, OCR1B);
+	sprintf(buffer, "[%c] OCR1A: %u , OCR1B: %u \n\n", movement, OCR1A, OCR1B);
 	UART_sendString(buffer);
 }
 u8 UART_Receive(void) {
