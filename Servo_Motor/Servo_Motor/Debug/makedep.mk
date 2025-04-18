@@ -4,6 +4,8 @@
 
 APP\main.c
 
+APP\MainApp.c
+
 HAL\DC MOTOR\DC_MOTOR_Program.c
 
 HAL\Joystick\JoyStick_Program.c

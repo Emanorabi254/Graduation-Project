@@ -13,15 +13,29 @@
 #include "DC_MOTOR_Interface.h"
 #include "ADC_Interface.h"
 #include "JoyStick_Interface.h"
+#include "MainApp.h"
+
+
+
 int main() {
 	PWM_init();
 	UART_init(9600);
 	Motor_init();
 	ADC_Init();
-
+	setup_modes_pins();
+	
 	while (1) {
-		
-		JoyStick_Mode();
-		
-			}
+		u8 Chosen_Mode = get_mode();
+
+		switch (Chosen_Mode) {
+			case 0:
+			JoyStick_Mode();
+			break;
+			
+			default:
+			UART_sendString("No Mode Selected!\n");
+			break;
+		}
+	}
+
 }

@@ -130,6 +130,12 @@
     <Compile Include="APP\main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="APP\MainApp.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\MainApp.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="HAL\DC MOTOR\DC_MOTOR_Interface.h">
       <SubType>compile</SubType>
     </Compile>
