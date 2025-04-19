@@ -36,5 +36,6 @@ void UART_init(u16 baud);
 void UART_sendString(const u8* str);
 void ShowingTheValue(u8 movement);
 u8 UART_Receive(void);
+void UART_Flush(void);
 
 #endif /* UART_INTERFACE_H_ */

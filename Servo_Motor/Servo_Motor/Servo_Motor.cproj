@@ -142,12 +142,6 @@
     <Compile Include="HAL\DC MOTOR\DC_MOTOR_Program.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="HAL\Joystick\JoyStick_Interface.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\Joystick\JoyStick_Program.c">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="LIB\BIT_MATH.h">
       <SubType>compile</SubType>
     </Compile>
@@ -190,7 +184,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HAL\DC MOTOR" />
-    <Folder Include="HAL\Joystick" />
     <Folder Include="MCAL" />
     <Folder Include="MCAL\ADC" />
     <Folder Include="MCAL\DIO" />

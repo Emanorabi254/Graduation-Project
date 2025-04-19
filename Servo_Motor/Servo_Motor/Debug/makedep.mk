@@ -8,8 +8,6 @@ APP\MainApp.c
 
 HAL\DC MOTOR\DC_MOTOR_Program.c
 
-HAL\Joystick\JoyStick_Program.c
-
 MCAL\ADC\ADC_Program.c
 
 MCAL\DIO\DIO_Program.c

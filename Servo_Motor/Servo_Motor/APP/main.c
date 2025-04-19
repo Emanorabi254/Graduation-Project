@@ -15,7 +15,6 @@
 #include "MainApp.h"
 
 
-
 int main() {
 	PWM_init();
 	UART_init(9600);
@@ -25,7 +24,9 @@ int main() {
 	
 	while (1) {
 		u8 Chosen_Mode = get_mode();
-
+		_delay_ms(100);  
+		UART_Flush();
+		
 		if (Chosen_Mode == MODE_VOICE || Chosen_Mode == MODE_EYE) {
 			DIO_SetPinValue(PORT_C, PIN4, PIN_LOW);  // Raspberry Pi -> 0
 		}

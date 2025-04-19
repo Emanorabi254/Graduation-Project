@@ -42,3 +42,9 @@ u8 UART_Receive(void) {
 	// Get and return received data from buffer
 	return (UDR_InputOutput);
 }
+
+void UART_Flush(void) {
+	while ( UCSRA & (1<<UCSRA_RXC) ) {
+		volatile u8 dummy = UDR_InputOutput;
+	}
+}
