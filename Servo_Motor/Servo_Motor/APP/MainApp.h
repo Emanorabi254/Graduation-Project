@@ -18,4 +18,9 @@
 void setup_modes_pins();
 u8 get_mode(void);
 
+void JoyStick_Mode();
+void MobileApp_Mode();
+void Voice_Mode();
+void EyeTracking_Mode();
+
 #endif /* MAINAPP_H_ */

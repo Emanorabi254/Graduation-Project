@@ -12,7 +12,6 @@
 #include "UART_Interface.h"
 #include "DC_MOTOR_Interface.h"
 #include "ADC_Interface.h"
-#include "JoyStick_Interface.h"
 #include "MainApp.h"
 
 
@@ -31,7 +30,19 @@ int main() {
 			case 0:
 			JoyStick_Mode();
 			break;
-			
+
+			case 1:
+			MobileApp_Mode();
+			break;
+
+			case 2:
+			Voice_Mode();
+			break;
+
+			case 3:
+			EyeTracking_Mode();
+			break;
+
 			default:
 			UART_sendString("No Mode Selected!\n");
 			break;
