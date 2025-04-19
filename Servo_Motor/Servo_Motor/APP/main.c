@@ -26,6 +26,13 @@ int main() {
 	while (1) {
 		u8 Chosen_Mode = get_mode();
 
+		if (Chosen_Mode == MODE_VOICE || Chosen_Mode == MODE_EYE) {
+			DIO_SetPinValue(PORT_C, PIN4, PIN_LOW);  // Raspberry Pi -> 0
+		}
+		else if (Chosen_Mode == MODE_MOBILE) {
+			DIO_SetPinValue(PORT_C, PIN4, PIN_HIGH); //  ESP -> 1
+		}
+
 		switch (Chosen_Mode) {
 			case 0:
 			JoyStick_Mode();

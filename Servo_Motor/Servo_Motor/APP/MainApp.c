@@ -17,11 +17,16 @@ void setup_modes_pins() {
 	DIO_SetPinDirection(PORT_B, PIN1, PIN_INPUT);
 	DIO_SetPinDirection(PORT_B, PIN2, PIN_INPUT);
 	DIO_SetPinDirection(PORT_B, PIN3, PIN_INPUT);
-
+	
+	DIO_SetPinDirection(PORT_C,PIN4,PIN_OUTPUT);  // for the Select pin in the Mux
+	
 	DIO_SetPinValue(PORT_B, PIN0, PIN_HIGH);
 	DIO_SetPinValue(PORT_B, PIN1, PIN_HIGH);
 	DIO_SetPinValue(PORT_B, PIN2, PIN_HIGH);
 	DIO_SetPinValue(PORT_B, PIN3, PIN_HIGH);
+	
+	DIO_SetPinValue(PORT_C, PIN4, PIN_LOW);  // default for Raspberry Pi
+
 }
 
 u8 get_mode() {

@@ -10,6 +10,7 @@
 #define MAINAPP_H_
 
 
+
 #define MODE_JOYSTICK 0
 #define MODE_MOBILE   1
 #define MODE_VOICE    2
