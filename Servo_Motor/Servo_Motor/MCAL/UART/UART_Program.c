@@ -36,6 +36,13 @@ void ShowingTheValue(u8 movement) {
 	sprintf(buffer, "[%c] OCR1A: %u , OCR1B: %u \n\n", movement, OCR1A, OCR1B);
 	UART_sendString(buffer);
 }
+void sendValueToRasPI(u8 ValueOfMode) {
+	u8 buffer[20];
+	sprintf(buffer, "Mode: %d", ValueOfMode);
+	UART_sendString(buffer);
+}
+
+
 u8 UART_Receive(void) {
 	// Wait for data to be received
 	while (!(UCSRA & (1 << UCSRA_RXC)));

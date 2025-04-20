@@ -29,6 +29,7 @@ int main() {
 		
 		if (Chosen_Mode == MODE_VOICE || Chosen_Mode == MODE_EYE) {
 			DIO_SetPinValue(PORT_C, PIN4, PIN_LOW);  // Raspberry Pi -> 0
+			sendValueToRasPI(Chosen_Mode);
 		}
 		else if (Chosen_Mode == MODE_MOBILE) {
 			DIO_SetPinValue(PORT_C, PIN4, PIN_HIGH); //  ESP -> 1

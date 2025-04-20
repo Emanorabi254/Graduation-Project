@@ -272,7 +272,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xe9a
+.text           0x00000000      0xefc
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
                 0x00000000                __vector_default
@@ -352,108 +352,111 @@ END GROUP
                 0x0000007e                __vector_20
                 0x00000082                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000082       0x88 APP/main.o
+ .text.main     0x00000082       0x90 APP/main.o
                 0x00000082                main
  .text.setup_modes_pins
-                0x0000010a       0x66 APP/MainApp.o
-                0x0000010a                setup_modes_pins
+                0x00000112       0x66 APP/MainApp.o
+                0x00000112                setup_modes_pins
  .text.get_mode
-                0x00000170       0x40 APP/MainApp.o
-                0x00000170                get_mode
+                0x00000178       0x40 APP/MainApp.o
+                0x00000178                get_mode
  .text.JoyStick_Mode
-                0x000001b0      0x100 APP/MainApp.o
-                0x000001b0                JoyStick_Mode
+                0x000001b8      0x100 APP/MainApp.o
+                0x000001b8                JoyStick_Mode
  .text.MobileApp_Mode
-                0x000002b0       0x70 APP/MainApp.o
-                0x000002b0                MobileApp_Mode
+                0x000002b8       0x70 APP/MainApp.o
+                0x000002b8                MobileApp_Mode
  .text.Voice_Mode
-                0x00000320       0x70 APP/MainApp.o
-                0x00000320                Voice_Mode
+                0x00000328       0x70 APP/MainApp.o
+                0x00000328                Voice_Mode
  .text.EyeTracking_Mode
-                0x00000390       0x70 APP/MainApp.o
-                0x00000390                EyeTracking_Mode
+                0x00000398       0x70 APP/MainApp.o
+                0x00000398                EyeTracking_Mode
  .text.PWM_init
-                0x00000400       0x26 HAL/DC MOTOR/DC_MOTOR_Program.o
-                0x00000400                PWM_init
+                0x00000408       0x26 HAL/DC MOTOR/DC_MOTOR_Program.o
+                0x00000408                PWM_init
  .text.Motor_init
-                0x00000426       0x2a HAL/DC MOTOR/DC_MOTOR_Program.o
-                0x00000426                Motor_init
+                0x0000042e       0x2a HAL/DC MOTOR/DC_MOTOR_Program.o
+                0x0000042e                Motor_init
  .text.MoveForward
-                0x00000450       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
-                0x00000450                MoveForward
+                0x00000458       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
+                0x00000458                MoveForward
  .text.MoveBackward
-                0x00000486       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
-                0x00000486                MoveBackward
+                0x0000048e       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
+                0x0000048e                MoveBackward
  .text.MoveRight
-                0x000004bc       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
-                0x000004bc                MoveRight
+                0x000004c4       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
+                0x000004c4                MoveRight
  .text.MoveLeft
-                0x000004f2       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
-                0x000004f2                MoveLeft
- .text.Stop     0x00000528       0x32 HAL/DC MOTOR/DC_MOTOR_Program.o
-                0x00000528                Stop
+                0x000004fa       0x36 HAL/DC MOTOR/DC_MOTOR_Program.o
+                0x000004fa                MoveLeft
+ .text.Stop     0x00000530       0x32 HAL/DC MOTOR/DC_MOTOR_Program.o
+                0x00000530                Stop
  .text.ADC_Init
-                0x0000055a        0xa MCAL/ADC/ADC_Program.o
-                0x0000055a                ADC_Init
+                0x00000562        0xa MCAL/ADC/ADC_Program.o
+                0x00000562                ADC_Init
  .text.ADC_Read
-                0x00000564       0x16 MCAL/ADC/ADC_Program.o
-                0x00000564                ADC_Read
+                0x0000056c       0x16 MCAL/ADC/ADC_Program.o
+                0x0000056c                ADC_Read
  .text.DIO_SetPinDirection
-                0x0000057a       0xec MCAL/DIO/DIO_Program.o
-                0x0000057a                DIO_SetPinDirection
+                0x00000582       0xec MCAL/DIO/DIO_Program.o
+                0x00000582                DIO_SetPinDirection
  .text.DIO_SetPinValue
-                0x00000666       0xec MCAL/DIO/DIO_Program.o
-                0x00000666                DIO_SetPinValue
+                0x0000066e       0xec MCAL/DIO/DIO_Program.o
+                0x0000066e                DIO_SetPinValue
  .text.DIO_GetPinValue
-                0x00000752       0x68 MCAL/DIO/DIO_Program.o
-                0x00000752                DIO_GetPinValue
+                0x0000075a       0x68 MCAL/DIO/DIO_Program.o
+                0x0000075a                DIO_GetPinValue
  .text.UART_init
-                0x000007ba       0x24 MCAL/UART/UART_Program.o
-                0x000007ba                UART_init
+                0x000007c2       0x24 MCAL/UART/UART_Program.o
+                0x000007c2                UART_init
  .text.UART_sendString
-                0x000007de       0x14 MCAL/UART/UART_Program.o
-                0x000007de                UART_sendString
+                0x000007e6       0x14 MCAL/UART/UART_Program.o
+                0x000007e6                UART_sendString
  .text.ShowingTheValue
-                0x000007f2       0x68 MCAL/UART/UART_Program.o
-                0x000007f2                ShowingTheValue
+                0x000007fa       0x68 MCAL/UART/UART_Program.o
+                0x000007fa                ShowingTheValue
+ .text.sendValueToRasPI
+                0x00000862       0x5a MCAL/UART/UART_Program.o
+                0x00000862                sendValueToRasPI
  .text.UART_Receive
-                0x0000085a        0x8 MCAL/UART/UART_Program.o
-                0x0000085a                UART_Receive
+                0x000008bc        0x8 MCAL/UART/UART_Program.o
+                0x000008bc                UART_Receive
  .text.UART_Flush
-                0x00000862       0x1c MCAL/UART/UART_Program.o
-                0x00000862                UART_Flush
+                0x000008c4       0x1c MCAL/UART/UART_Program.o
+                0x000008c4                UART_Flush
  .text.libgcc.div
-                0x0000087e       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000087e                __udivmodsi4
+                0x000008e0       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x000008e0                __udivmodsi4
  .text.avr-libc
-                0x000008c2       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x000008c2                sprintf
+                0x00000924       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00000924                sprintf
  .text.avr-libc
-                0x00000906      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x00000906                vfprintf
+                0x00000968      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x00000968                vfprintf
  .text.avr-libc
-                0x00000cc8       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00000cc8                strnlen_P
+                0x00000d2a       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00000d2a                strnlen_P
  .text.avr-libc
-                0x00000cde       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00000cde                strnlen
+                0x00000d40       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00000d40                strnlen
  .text.avr-libc
-                0x00000cf4       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x00000cf4                fputc
+                0x00000d56       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00000d56                fputc
  .text.avr-libc
-                0x00000d6c       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x00000d6c                __ultoa_invert
+                0x00000dce       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00000dce                __ultoa_invert
  .text.libgcc.prologue
-                0x00000e28       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x00000e28                __prologue_saves__
+                0x00000e8a       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00000e8a                __prologue_saves__
  .text.libgcc.prologue
-                0x00000e60       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x00000e60                __epilogue_restores__
-                0x00000e96                . = ALIGN (0x2)
+                0x00000ec2       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00000ec2                __epilogue_restores__
+                0x00000ef8                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000e96        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000e96                _exit
-                0x00000e96                exit
+ .fini9         0x00000ef8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000ef8                _exit
+                0x00000ef8                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -472,11 +475,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000e96        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000ef8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000e9a                _etext = .
+                0x00000efc                _etext = .
 
-.data           0x00800060       0x5a load address 0x00000e9a
+.data           0x00800060       0x62 load address 0x00000efc
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -488,27 +491,26 @@ END GROUP
  .rodata.str1.1
                 0x00800073       0x28 APP/MainApp.o
  .rodata.str1.1
-                0x0080009b       0x1e MCAL/UART/UART_Program.o
+                0x0080009b       0x27 MCAL/UART/UART_Program.o
  *(.gnu.linkonce.r*)
-                0x008000ba                . = ALIGN (0x2)
- *fill*         0x008000b9        0x1 
-                0x008000ba                _edata = .
-                0x008000ba                PROVIDE (__data_end, .)
+                0x008000c2                . = ALIGN (0x2)
+                0x008000c2                _edata = .
+                0x008000c2                PROVIDE (__data_end, .)
 
-.bss            0x008000ba        0x0
+.bss            0x008000c2        0x0
                 [!provide]                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x00000e9a                __data_load_start = LOADADDR (.data)
-                0x00000ef4                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000efc                __data_load_start = LOADADDR (.data)
+                0x00000f5e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008000ba        0x0
+.noinit         0x008000c2        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x008000ba                _end = .
+                0x008000c2                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -582,7 +584,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x160
+.debug_aranges  0x00000000      0x168
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x20 APP/main.o
@@ -595,73 +597,73 @@ END GROUP
  .debug_aranges
                 0x000000e0       0x40 MCAL/DIO/DIO_Program.o
  .debug_aranges
-                0x00000120       0x40 MCAL/UART/UART_Program.o
+                0x00000120       0x48 MCAL/UART/UART_Program.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1ace
+.debug_info     0x00000000     0x1b89
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_info    0x000004e6      0x2be APP/main.o
- .debug_info    0x000007a4      0xa75 APP/MainApp.o
- .debug_info    0x00001219      0x432 HAL/DC MOTOR/DC_MOTOR_Program.o
- .debug_info    0x0000164b       0xcb MCAL/ADC/ADC_Program.o
- .debug_info    0x00001716      0x1b9 MCAL/DIO/DIO_Program.o
- .debug_info    0x000018cf      0x1ff MCAL/UART/UART_Program.o
+ .debug_info    0x000004e6      0x2f5 APP/main.o
+ .debug_info    0x000007db      0xa75 APP/MainApp.o
+ .debug_info    0x00001250      0x432 HAL/DC MOTOR/DC_MOTOR_Program.o
+ .debug_info    0x00001682       0xcb MCAL/ADC/ADC_Program.o
+ .debug_info    0x0000174d      0x1b9 MCAL/DIO/DIO_Program.o
+ .debug_info    0x00001906      0x283 MCAL/UART/UART_Program.o
 
-.debug_abbrev   0x00000000      0xa71
+.debug_abbrev   0x00000000      0xa89
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_abbrev  0x000004a3      0x126 APP/main.o
- .debug_abbrev  0x000005c9      0x1c9 APP/MainApp.o
- .debug_abbrev  0x00000792       0x87 HAL/DC MOTOR/DC_MOTOR_Program.o
- .debug_abbrev  0x00000819       0x78 MCAL/ADC/ADC_Program.o
- .debug_abbrev  0x00000891       0xb4 MCAL/DIO/DIO_Program.o
- .debug_abbrev  0x00000945      0x12c MCAL/UART/UART_Program.o
+ .debug_abbrev  0x000004a3      0x13e APP/main.o
+ .debug_abbrev  0x000005e1      0x1c9 APP/MainApp.o
+ .debug_abbrev  0x000007aa       0x87 HAL/DC MOTOR/DC_MOTOR_Program.o
+ .debug_abbrev  0x00000831       0x78 MCAL/ADC/ADC_Program.o
+ .debug_abbrev  0x000008a9       0xb4 MCAL/DIO/DIO_Program.o
+ .debug_abbrev  0x0000095d      0x12c MCAL/UART/UART_Program.o
 
-.debug_line     0x00000000      0xc6f
+.debug_line     0x00000000      0xc97
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_line    0x00000116      0x23d APP/main.o
- .debug_line    0x00000353      0x36a APP/MainApp.o
- .debug_line    0x000006bd      0x1d0 HAL/DC MOTOR/DC_MOTOR_Program.o
- .debug_line    0x0000088d       0x9b MCAL/ADC/ADC_Program.o
- .debug_line    0x00000928      0x21a MCAL/DIO/DIO_Program.o
- .debug_line    0x00000b42      0x12d MCAL/UART/UART_Program.o
+ .debug_line    0x00000116      0x243 APP/main.o
+ .debug_line    0x00000359      0x36a APP/MainApp.o
+ .debug_line    0x000006c3      0x1d0 HAL/DC MOTOR/DC_MOTOR_Program.o
+ .debug_line    0x00000893       0x9b MCAL/ADC/ADC_Program.o
+ .debug_line    0x0000092e      0x21a MCAL/DIO/DIO_Program.o
+ .debug_line    0x00000b48      0x14f MCAL/UART/UART_Program.o
 
-.debug_frame    0x00000000      0x268
+.debug_frame    0x00000000      0x294
  *(.debug_frame)
  .debug_frame   0x00000000       0x24 APP/main.o
  .debug_frame   0x00000024       0x98 APP/MainApp.o
  .debug_frame   0x000000bc       0x84 HAL/DC MOTOR/DC_MOTOR_Program.o
  .debug_frame   0x00000140       0x34 MCAL/ADC/ADC_Program.o
  .debug_frame   0x00000174       0x64 MCAL/DIO/DIO_Program.o
- .debug_frame   0x000001d8       0x90 MCAL/UART/UART_Program.o
+ .debug_frame   0x000001d8       0xbc MCAL/UART/UART_Program.o
 
-.debug_str      0x00000000      0x588
+.debug_str      0x00000000      0x5a5
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32a/avr5/crtatmega32a.o
- .debug_str     0x00000196      0x258 APP/main.o
-                                0x298 (size before relaxing)
- .debug_str     0x000003ee       0xb6 APP/MainApp.o
+ .debug_str     0x00000196      0x269 APP/main.o
+                                0x2a9 (size before relaxing)
+ .debug_str     0x000003ff       0xb6 APP/MainApp.o
                                 0x2fd (size before relaxing)
- .debug_str     0x000004a4       0x23 HAL/DC MOTOR/DC_MOTOR_Program.o
+ .debug_str     0x000004b5       0x23 HAL/DC MOTOR/DC_MOTOR_Program.o
                                 0x201 (size before relaxing)
- .debug_str     0x000004c7       0x22 MCAL/ADC/ADC_Program.o
+ .debug_str     0x000004d8       0x22 MCAL/ADC/ADC_Program.o
                                 0x1a9 (size before relaxing)
- .debug_str     0x000004e9       0x65 MCAL/DIO/DIO_Program.o
+ .debug_str     0x000004fa       0x65 MCAL/DIO/DIO_Program.o
                                 0x23c (size before relaxing)
- .debug_str     0x0000054e       0x3a MCAL/UART/UART_Program.o
-                                0x20e (size before relaxing)
+ .debug_str     0x0000055f       0x46 MCAL/UART/UART_Program.o
+                                0x22b (size before relaxing)
 
-.debug_loc      0x00000000      0x6bd
+.debug_loc      0x00000000      0x773
  *(.debug_loc)
  .debug_loc     0x00000000       0x66 APP/main.o
  .debug_loc     0x00000066      0x2a9 APP/MainApp.o
  .debug_loc     0x0000030f       0x21 MCAL/ADC/ADC_Program.o
  .debug_loc     0x00000330      0x240 MCAL/DIO/DIO_Program.o
- .debug_loc     0x00000570      0x14d MCAL/UART/UART_Program.o
+ .debug_loc     0x00000570      0x203 MCAL/UART/UART_Program.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -681,14 +683,14 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x100
+.debug_ranges   0x00000000      0x108
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x10 APP/main.o
  .debug_ranges  0x00000010       0x38 APP/MainApp.o
  .debug_ranges  0x00000048       0x40 HAL/DC MOTOR/DC_MOTOR_Program.o
  .debug_ranges  0x00000088       0x18 MCAL/ADC/ADC_Program.o
  .debug_ranges  0x000000a0       0x30 MCAL/DIO/DIO_Program.o
- .debug_ranges  0x000000d0       0x30 MCAL/UART/UART_Program.o
+ .debug_ranges  0x000000d0       0x38 MCAL/UART/UART_Program.o
 
 .debug_macro
  *(.debug_macro)
